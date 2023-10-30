@@ -1,0 +1,115 @@
+
+
+.mainbox {
+    position: relative; 
+    width: 700px; 
+    height: 700px; 
+    margin: 0 auto;
+}
+
+.opp-space {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start;
+}
+
+.opp-stats {
+    width: 45%; 
+    margin-left: 0; 
+    margin-right: auto;
+} 
+
+.you-stats {
+    width: 45%; 
+    margin-left: auto; 
+    margin-right: 0;
+}
+
+
+.opponent-image {
+    display: flex; 
+    align-items: flex-end; 
+    width: 43%; 
+    height: 180px; 
+    justify-content: center;
+}
+
+.you-space {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-end;
+}
+
+.you-image { 
+    display:flex; 
+    align-items: flex-end; 
+    width: 43%; 
+    justify-content: center; 
+    padding: 0;
+}
+
+/* same */
+.you-image-src {
+    position: absolute;
+    display: block; 
+    width: 120px; 
+    height: auto;
+    z-index: 0;
+}
+
+.notificationbox {
+    display: flex; 
+    height: 150px; 
+    justify-content: 
+    flex-end; padding: 0;
+}
+
+.message {
+    width: 100%; 
+    line-height: 200%;
+}
+
+.optionsbox {
+    width: 66%;
+    margin: 0;
+}
+
+.pokemon-image {
+    display: block; 
+    width: 120px !important; 
+    height: auto;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.detail-image {
+    width: 200px !important;
+}
+
+/* attack efects */
+
+/* https://stackoverflow.com/questions/16344354/how-to-make-blinking-flashing-text-with-css-3 */
+.blink {
+    animation: blinker 1s linear infinite;
+}
+
+.blink-fast {
+    animation: blinker 0.5s linear infinite;
+}
+  
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* https://stackoverflow.com/a/1997397 */
+.opp-attack-effect {
+    position: absolute;
+    display: block; 
+    width: 120px; 
+    height: auto;
+    z-index: 1;
+}
